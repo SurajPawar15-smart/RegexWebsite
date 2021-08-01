@@ -1,0 +1,69 @@
+<!-- <div class="container-fluid center "> -->
+<!-- <div class="row "> -->
+<!-- <div class="col-12 "> -->
+
+
+<div class="jumbotron col-sm-4 p-2 m-0 bg-inverse">
+
+    <h1 class="text-center">Calculator</h1>
+
+    Enter the Calculating Number as Input:
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+        <div class="col-sm-12 form-control text-lg-right" type="text">{{input}}</div>
+    </div>
+
+    See the Output of the given Input Number:
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+        <div class="form-control text-sm-right" type="text">{{result}}</div>
+    </div>
+
+    <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-info col-sm-6" type="button" (click)="allClear()">C</button>
+        <button class="btn btn-warning col-sm-3" type="button" (click)="clear()">x</button>
+        <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('/')">/</button>
+    </div>
+
+    <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('7')">7</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('8')">8</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('9')">9</button>
+        <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('*')">X</button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('4')">4</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('5')">5</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('6')">6</button>
+        <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('-')">-</button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('1')">1</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('2')">2</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('3')">3</button>
+        <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('+')">+</button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('.')">.</button>
+        <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('0')">0</button>
+        <button class="btn btn-lg btn-success col-sm-6 p-1" type="button" (click)="getAnswer()">=</button>
+    </div>
+</div>
+
+
+<div class="container p-1">
+    <p>&nbsp;Our final screen is going to look as follows or which container the following things such as :</p>
+    <br>
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>The first row displays the user input including the operators.</p>
+    
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>The second row displays the result as the user type.</p>
+    
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>C Clears all displays</p>
+    
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>x clears the last input i.e delete</p>
+    
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>/, X,- & + are our four operators for division, multiplication subtraction & addition</p>
+    
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>use . to enter the decimal numbers</p>
+  
+    <p>&nbsp;<span style="font-size:200%;color:blue;">&bigstar;</span>= Calculates and resets the user input.</p>
+
+</div>
